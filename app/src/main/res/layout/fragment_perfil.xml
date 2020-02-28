@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <ImageView
+        android:id="@+id/ima_per"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:src="@drawable/logos" />
+
+    <TextView
+        android:id="@+id/eti_nom_per"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/nom_per"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="12sp"
+        android:inputType="textPersonName"
+        android:hint="Nombre" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/eti_sex_per"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sexo"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="93dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/eti_ema_per"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ema_per"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="Email preferences" />
+
+    <TextView
+        android:id="@+id/eti_fec_per"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:text="Fecha de Nacimiento" />
+
+    <TextView
+        android:id="@+id/fec_per"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="DD/MM/AAAA"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/eti_not"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Notificacion de Bateria"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <Switch
+            android:id="@+id/switch1_per"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:textOff="NO"
+            android:textOn="SI"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffff"
+        android:layout_marginTop="20dp">
+
+
+        <Button
+            android:id="@+id/gur_per"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar Cambios"
+            android:textSize="12sp"
+            android:background="@drawable/boton_uno"/>
+
+        <TextView
+            android:id="@+id/ter_con_per"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="@string/ter_condici"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+
+</LinearLayout>

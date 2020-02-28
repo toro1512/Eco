@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Actividades.Main2Activity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:elevation="8dp"
+            tools:targetApi="lollipop">
+
+            <TextView
+                android:id="@+id/mostar_lugar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="13dp"
+                android:text="EcoTICS"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_mapa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/fab_listar"
+            app:fab_icon="@drawable/mapa"
+            android:layout_marginLeft="-70dp"
+            app:fab_size="mini"
+            android:layout_marginStart="-50dp"
+            android:layout_alignStart="@id/fab_listar"
+                app:fab_colorNormal="@color/colorAccent"/>
+
+           <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_listar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            app:fab_icon="@drawable/lupa"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            app:fab_size="mini"
+            app:fab_colorNormal="@color/colorAccent"/>
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/content_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/grupofab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        app:fab_addButtonColorNormal="@color/colorAccent"
+        app:fab_addButtonColorPressed="@color/colorPrimary"
+
+        app:fab_addButtonSize="mini"
+        app:fab_expandDirection="down"
+        app:fab_labelStyle="@style/custom_fab"
+        app:fab_labelsPosition="right"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/FabSalir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_icon="@drawable/ff_salir"
+            app:fab_colorNormal="@color/colorGris"
+            app:fab_title="Cerrar sesión"
+            app:fab_size="mini" />
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/Fabtermino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_icon="@drawable/ff_termin"
+            app:fab_colorNormal="@color/colorGris"
+            app:fab_title="Términos de uso"
+            app:fab_size="mini" />
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/FabContacto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/colorGris"
+            app:fab_icon="@drawable/df_pruebad"
+            app:fab_title="Contacto"
+            app:fab_size="mini" />
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/FabIntro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_icon="@drawable/ff_sobre"
+            app:fab_colorNormal="@color/colorGris"
+            app:fab_title="Ecotics"
+            app:fab_size="mini" />
+
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/FabPerfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/colorGris"
+            app:fab_icon="@drawable/ff_perfil"
+            app:fab_title="Perfil"
+            app:fab_size="mini" />
+
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="450dp"
+        android:orientation="vertical"
+        >
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

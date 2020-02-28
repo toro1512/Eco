@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">EcoCarg</string>
+    <string name="app_email">Email</string>
+    <string name="app_pasword">Pasword</string>
+    <string name="app_usuario">Usuario</string>
+    <string name="btn_reg">Registrar</string>
+    <string name="item_volver"><u>Volver</u></string>
+    <string name="ter_condici"><u>Terminos y Condiciones</u></string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="tab_text_1">Uno_fragment</string>
+    <string name="tab_text_2">Dos_fragment</string>
+    <string name="tab_text_3">Tres_fragment</string>
+    <string name="tab_text_4">Cuatro_fragment</string>
+    <string name="tab_text_5">Actividad</string>
+
+
+</resources>
